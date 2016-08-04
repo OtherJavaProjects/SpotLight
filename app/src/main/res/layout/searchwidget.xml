@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widgetlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/widgetbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@+id/widgetgooglesearch"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/widgetsearchbox"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Search"
+            android:paddingLeft="50dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="#736F6E" >
+        </Button>
+
+        <ImageView
+            android:id="@+id/widgetgooglesearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:paddingLeft="4dp" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="1dp"
+            android:background="@drawable/search"
+            android:gravity="center_horizontal"
+            android:paddingLeft="3dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
